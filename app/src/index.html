@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DAPP</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body >
+    
+    <h1>StarNotary Token DAPP</h1>
+
+    <hr>
+
+    <br>
+      <h1>Create a Star</h1>
+      <br><label for="starName">Star Name:</label><input type="text" id="starName" class="form-control"></input>
+      <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
+      <br><br><button id="createStar" class="btn btn-default" onclick="App.createStar()">Create Star</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Look up a Star</h1>
+      <br><label for="name">Star ID:</label><input type="text" id="lookid" class="form-control"></input>
+      <br><br><button class="btn btn-default" onclick="App.lookUp()">Look Up a Star</button>
+      <hr>
+      <br>
+      <span id="status"></span>
+      <br>
+    <script src="index.js"></script>
+  </body>
+</html>
